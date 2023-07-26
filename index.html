@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light" >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,11 +19,14 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awsome -->
-    <script src="https://kit.fontawesome.com/2b985c936e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/2b985c936e.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- css -->
     <style>
       .font-lato {
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
       }
     </style>
     <script>
@@ -40,6 +43,62 @@
     </script>
   </head>
   <body>
+<header class="container mx-auto  ">
+  <!-- navber  -->
+  <!-- navber for tablet and mobile -->
+  <div class=" bg-base-100  flex justify-between items-center xl:hidden mx-12  my-5 lg:my-10 py-3  lg:py-5 lg:px-12 lg:rounded-full lg:bg-[#F85559]">
+    <div class="flex flex-row gap-4 items-center">
+      <img src="./images/logo.png" alt="" srcset="">
+      <h2 class="text-xl font-bold lg:text-3xl lg:text-white">Fruit Burst</h2>
+    </div>
+    <div class=" hidden lg:flex">
+      <div class="relative shadow-lg rounded-full">
+        <input type="text " placeholder="Scearch here" class="py-3 px-6 rounded-full w-72">
+        <button class="absolute right-4  btn btn-ghost btn-circle text-gray-600 ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+        </button>
+       
+      </div>
+    </div>
+    <div class="">
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost xl:hidden lg:text-white ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 lg:h-7 lg:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-1  shadow bg-base-100 rounded-box ">
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
+<!-- navbe for large screen -->
+<div class=" justify-between items-center bg-[#F85559] rounded-full hidden xl:flex mx-24 my-8 py-6 px-14 ">
+  <div class="flex gap-7 text-lg text-white font-medium list-none ">
+    <li><a>Home</a></li>
+    <li><a>About Us</a></li>
+    <li><a>Shop</a></li>
+    <li><a>All Fruits</a></li>
+  </div>
+  
+  <div class="flex flex-row gap-4 items-center">
+    <img src="./images/logo.png" alt="" srcset="">
+    <h2 class="text-4xl text-white font-bold">Fruit Burst</h2>
+  </div>
+
+  <div class="relative">
+    <input type="text " placeholder="Scearch here" class="py-4 px-6 rounded-full w-72">
+    <button class="absolute right-4 top-1 btn btn-ghost btn-circle text-gray-600">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+    </button>
+  </div>
+</div>
+
+</header>
+    
+  
   </body>
 </html>
