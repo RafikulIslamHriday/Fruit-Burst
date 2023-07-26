@@ -28,14 +28,20 @@
       .font-lato {
         font-family: "Lato", sans-serif;
       }
+      .bg-img{
+        background-image: url("images/banner1.png");
+      }
+
     </style>
     <script>
       tailwind.config = {
         theme: {
           extend: {
-            backgroundImage: {},
+            backgroundImage: {
+
+            },
             colors: {
-              clifford: "#da373d",
+              'bg-primary':"#F85559"
             },
           },
         },
@@ -45,8 +51,9 @@
   <body>
 <header class="container mx-auto  ">
   <!-- navber  -->
-  <!-- navber for tablet and mobile -->
-  <div class=" bg-base-100  flex justify-between items-center xl:hidden mx-12  my-5 lg:my-10 py-3  lg:py-5 lg:px-12 lg:rounded-full lg:bg-[#F85559]">
+ <nav>
+   <!-- navber for tablet and mobile -->
+   <div class=" bg-base-100  flex justify-between items-center xl:hidden mx-5 md:mx-12  my-5 lg:my-10 py-3  lg:py-5 lg:px-12 lg:rounded-full lg:bg-[#F85559]">
     <div class="flex flex-row gap-4 items-center">
       <img src="./images/logo.png" alt="" srcset="">
       <h2 class="text-xl font-bold lg:text-3xl lg:text-white">Fruit Burst</h2>
@@ -96,7 +103,90 @@
     </button>
   </div>
 </div>
+ </nav>
 
+ <!-- banner -->
+<div class="mx-2 my-5  lg:mt-12 lg:mb-40 md:mx-12 xl:mx-24 relative">
+
+  <div class="carousel ">
+    <div id="slide1" class="carousel-item relative rounded-lg w-full h-52 md:h-auto bg-gradient-to-t from-[rgba(18,18,18,.20)] to-[rgba(18,18,18,1)]  ">
+      <img src="./images/banner1.png" class="w-full mix-blend-overlay " />
+      <div class="absolute top-5 left-8 md:left-36 md:top-16 lg:top-20  lg:max-w-2xl max-w-xs md:max-w-md lg:left-44 xl:left-48 xl:top-24 text-center text-white">
+        <h1 class="md:text-4xl lg:text-6xl  text-2xl font-bold">Exotic tastes at your doorstep</h1>
+        <p class=" lg:py-5 text-sm md:text-lg py-2 px-10">We supply highly quality organic products</p>
+        <button class="btn bg-bg-primary  text-white border-none capitalize ">Shop Now</button>
+      </div>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" class="btn btn-circle  ">❮</a> 
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <!-- 2 -->
+    <div id="slide2" class="carousel-item relative rounded-lg w-full h-52 md:h-auto bg-gradient-to-t from-[rgba(18,18,18,.20)] to-[rgba(18,18,18,1)]  ">
+      <img src="./images/banner2.png" class="w-full mix-blend-overlay " />
+      <div class="absolute top-5 left-8 md:left-36 md:top-16 lg:top-20  lg:max-w-2xl max-w-xs md:max-w-md lg:left-44 xl:left-56 xl:top-28 text-center text-white">
+        <h1 class="md:text-4xl lg:text-6xl  text-2xl font-bold">Exotic tastes at your doorstep</h1>
+        <p class=" lg:py-5 text-sm md:text-lg py-2 px-10">We supply highly quality organic products</p>
+        <button class="btn bg-bg-primary text-white border-none capitalize ">Shop Now</button>
+      </div>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle  ">❮</a> 
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <!-- 3 -->
+    <div id="slide3" class="carousel-item relative rounded-lg w-full h-52 md:h-auto bg-gradient-to-t from-[rgba(18,18,18,.20)] to-[rgba(18,18,18,1)]  ">
+      <img src="./images/banner3.png" class="w-full mix-blend-overlay " />
+      <div class="absolute top-5 left-8 md:left-36 md:top-16 lg:top-20  lg:max-w-2xl max-w-xs md:max-w-md lg:left-44 xl:left-56 xl:top-28 text-center text-white">
+        <h1 class="md:text-4xl lg:text-6xl  text-2xl font-bold">Exotic tastes at your doorstep</h1>
+        <p class=" lg:py-5 text-sm md:text-lg py-2 px-10">We supply highly quality organic products</p>
+        <button class="btn bg-bg-primary text-white border-none capitalize ">Shop Now</button>
+      </div>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle  ">❮</a> 
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <!-- 4 -->
+    <div id="slide4" class="carousel-item relative rounded-lg w-full h-52 md:h-auto bg-gradient-to-t from-[rgba(18,18,18,.20)] to-[rgba(18,18,18,1)]  ">
+      <img src="./images/banner4.png" class="w-full mix-blend-overlay " />
+      <div class="absolute top-5 left-8 md:left-36 md:top-16 lg:top-20  lg:max-w-2xl max-w-xs md:max-w-md lg:left-44 xl:left-56 xl:top-28 text-center text-white">
+        <h1 class="md:text-4xl lg:text-6xl  text-2xl font-bold">Exotic tastes at your doorstep</h1>
+        <p class=" lg:py-5 text-sm md:text-lg py-2 px-10">We supply highly quality organic products</p>
+        <button class="btn bg-bg-primary text-white border-none capitalize ">Shop Now</button>
+      </div>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" class="btn btn-circle  ">❮</a> 
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+  </div>
+  <!--  fruit part -->
+  <div class="hidden lg:flex justify-center absolute xl:-bottom-24  lg:-bottom-32 lg:left-6 xl:left-24">
+    <div class="flex flex-row items-center gap-5 shadow-md px-20 py-8 rounded-lg bg-white  ">
+      <div class="flex flex-col justify-center items-center">
+        <img src="./images/fruit1.png" alt="" srcset="" class="w-32 h-24">
+        <p>Strawberry</p>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img src="./images/fruit2.png" alt="" srcset="" class="w-32 h-24">
+        <p>Orange</p>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img src="./images/fruit3.png" alt="" srcset="" class="w-32 h-24">
+        <p>Mango</p>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img src="./images/fruit4.png" alt="" srcset="" class="w-32 h-24">
+        <p>Strawberry</p>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img src="./images/fruit5.png" alt="" srcset="" class="w-32 h-24">
+        <p>Mango</p>
+      </div>
+    </div>
+  </div>
+</div>
 </header>
     
   
